@@ -9,6 +9,9 @@ $ minikube status
 $ kubectl get pods -A
 $ kubectl get pods --all-namespaces
 
+## Apply config
+$ kubectl apply -f app.yml
+
 ## Show cluster nodes
 $ kubectl get nodes
 
@@ -48,16 +51,16 @@ $ minikube delete
 
 ##### get application logs
     kubectl logs {pod-name}
-    
+
 ##### stop your Minikube cluster
     minikube stop
 
 <br />
 
-> :warning: **Known issue - Minikube IP not accessible** 
+> :warning: **Known issue - Minikube IP not accessible**
 
 If you can't access the NodePort service webapp with `MinikubeIP:NodePort`, execute the following command:
-    
+
     minikube service webapp-service
 
 ---
