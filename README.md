@@ -64,6 +64,12 @@ If you can't access the NodePort service webapp with `MinikubeIP:NodePort`, exec
     minikube service webapp-service
 
 ---
+### Core Components
+
+![Kubernetes Architecture](Kubernetes-Architecture-Diagram.jpg)
+
+
+---
 
 ### Links
 * mongodb image on Docker Hub: https://hub.docker.com/_/mongo
