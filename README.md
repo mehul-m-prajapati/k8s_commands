@@ -29,30 +29,29 @@ $ minikube delete
 ```
 
 ---
-
-##### get minikube node's ip address
+#### get minikube node's ip address
     minikube ip
-
-##### get basic info about k8s components
+#### get basic info about k8s components
     kubectl get node
     kubectl get pod
     kubectl get svc
     kubectl get all
     kubectl get configmap
     kubectl get secret
-
-##### get extended info about components
+    kubectl get deployment
+    kubectl get replicaset
+#### get extended info about components
     kubectl get pod -o wide
     kubectl get node -o wide
-
-##### get detailed info about a specific component
+#### get detailed info about a specific component
     kubectl describe svc {svc-name}
     kubectl describe pod {pod-name}
-
-##### get application logs
+#### Debugging
     kubectl logs {pod-name}
+    kubectl exec -it {pod-name} -- bin/bash
+    kubectl top
 
-##### stop your Minikube cluster
+#### stop your Minikube cluster
     minikube stop
 
 <br />
@@ -62,15 +61,11 @@ $ minikube delete
 If you can't access the NodePort service webapp with `MinikubeIP:NodePort`, execute the following command:
 
     minikube service webapp-service
-
 ---
 ### Core Components
-
 ![Kubernetes Architecture](Kubernetes-Architecture-Diagram.jpg)
 
-
 ---
-
 ### Links
 * mongodb image on Docker Hub: https://hub.docker.com/_/mongo
 * webapp image on Docker Hub: https://hub.docker.com/repository/docker/nanajanashia/k8s-demo-app
