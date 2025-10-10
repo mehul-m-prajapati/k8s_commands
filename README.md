@@ -66,7 +66,7 @@ If you can't access the NodePort service webapp with `MinikubeIP:NodePort`, exec
 ---
 ### Core Components
 
-![Kubernetes Architecture](Kubernetes-Architecture-Diagram.jpg)
+![Kubernetes Architecture](Architecture-Diagram.jpg)
 
 
 ---
