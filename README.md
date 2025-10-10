@@ -39,6 +39,7 @@ $ minikube delete
     kubectl get configmap
     kubectl get secret
     kubectl get deployment
+    kubectl get deployment nginx-deployment -o yaml > nginx_deployment.yml
     kubectl get replicaset
 #### get extended info about components
     kubectl get pod -o wide
